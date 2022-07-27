@@ -15,6 +15,27 @@
           null
         ]
       },
+      "/Users/vaeliwen/turing/4module/turing-take-home-mod4/spec/models/subscription_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/vaeliwen/turing/4module/turing-take-home-mod4/app/models/subscription.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/vaeliwen/turing/4module/turing-take-home-mod4/spec/models/tea_spec.rb": {
         "lines": [
           1,
@@ -37,6 +58,6 @@
         ]
       }
     },
-    "timestamp": 1658943806
+    "timestamp": 1658944157
   }
 }
