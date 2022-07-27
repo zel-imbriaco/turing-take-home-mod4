@@ -6,7 +6,7 @@ RSpec.describe 'Subscriptions', type: :request do
     before :each do
       @customer_1 = create(:customer, id: 1)
       @tea_1 = create(:tea)
-      post "/api/v1/subscriptions", params: {title: @tea_1.title, price: 10, status: 'pending', frequency: 'Monthly', customer_id: 1}
+      post "/api/v1/subscriptions", params: {title: @tea_1.title, price: 10, status: 'Active', frequency: 'Monthly', customer_id: 1}
     end
 
     it 'Returns status code 201' do
@@ -14,14 +14,13 @@ RSpec.describe 'Subscriptions', type: :request do
     end
 
     it 'Successfully creates a new subscription with inputted fields' do
-      expect(json["data"].count).to eq 4
+      expect(json["data"].count).to eq 3
       expect(json["data"]["type"]).to eq "subscription"
       expect(json["data"]["attributes"].count).to eq 4
       expect(json["data"]["attributes"]["title"]).to eq @tea_1.title
       expect(json["data"]["attributes"]["price"]).to eq 10
-      expect(json["data"]["attributes"]["status"]).to eq "pending"
+      expect(json["data"]["attributes"]["status"]).to eq "Active"
       expect(json["data"]["attributes"]["frequency"]).to eq "Monthly"
-      expect(json["data"]["relationships"]["customer"]["data"]["id"]).to eq "1" 
     end
   end
 end

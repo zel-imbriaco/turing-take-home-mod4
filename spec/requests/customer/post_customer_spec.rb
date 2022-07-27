@@ -15,8 +15,9 @@ RSpec.describe 'Customers', type: :request do
     it 'Successfully creates upon post completion' do
       expect(json["data"].count).to eq (3)
       expect(json["data"]["type"]).to eq "customer"
-      expect(json["data"]["attributes"].count).to eq 4
+      expect(json["data"]["attributes"].count).to eq 5
       expect(json["data"]["attributes"]["first_name"]).to eq "Zel"
+      expect(json["data"]["attributes"]["subscriptions"].count).to eq 0
     end
   end
 end
