@@ -3,8 +3,8 @@ class CreateSubscription < ActiveRecord::Migration[5.2]
     create_table :subscriptions do |t|
       t.string :title
       t.integer :price
-      t.integer :status
-      t.integer :frequency
+      t.string :status
+      t.string :frequency
     end
   end
 end
