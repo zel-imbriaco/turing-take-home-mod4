@@ -26,12 +26,18 @@
           2,
           2,
           null,
+          null,
+          1,
+          2,
+          null,
           null
         ]
       },
       "/Users/vaeliwen/turing/4module/turing-take-home-mod4/app/models/subscription.rb": {
         "lines": [
           1,
+          1,
+          null,
           1,
           null
         ]
@@ -58,6 +64,6 @@
         ]
       }
     },
-    "timestamp": 1658944157
+    "timestamp": 1658945273
   }
 }
