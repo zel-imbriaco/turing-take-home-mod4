@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :subscription do
-    association :title, factory: :tea
+    title { Faker::Tea.variety }
     price { Faker::Commerce.price }
     status { Faker::Subscription.status }
     frequency { Faker::Subscription.subscription_term }

@@ -254,10 +254,10 @@
         "lines": [
           1,
           1,
+          11,
+          11,
           1,
-          9,
-          1,
-          9,
+          11,
           1,
           null,
           null
@@ -267,10 +267,10 @@
         "lines": [
           1,
           1,
-          11,
-          11,
-          11,
-          11,
+          3,
+          3,
+          3,
+          3,
           null,
           null
         ]
@@ -412,12 +412,6 @@
           null
         ]
       },
-      "/Users/vaeliwen/turing/4module/turing-take-home-mod4/app/models/tea.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/vaeliwen/turing/4module/turing-take-home-mod4/app/controllers/api/v1/customers_controller.rb": {
         "lines": [
           1,
@@ -450,6 +444,7 @@
           null,
           1,
           null,
+          null,
           5,
           null,
           null,
@@ -462,6 +457,24 @@
           null,
           null,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/vaeliwen/turing/4module/turing-take-home-mod4/app/serializers/subscription_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          5,
+          5,
+          7,
+          5,
+          null,
+          null,
+          5,
           null,
           null
         ]
@@ -485,15 +498,13 @@
           null
         ]
       },
-      "/Users/vaeliwen/turing/4module/turing-take-home-mod4/app/serializers/subscription_serializer.rb": {
+      "/Users/vaeliwen/turing/4module/turing-take-home-mod4/app/models/tea.rb": {
         "lines": [
-          1,
-          1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1658954920
+    "timestamp": 1659016093
   }
 }

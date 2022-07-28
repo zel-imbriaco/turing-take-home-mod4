@@ -7,6 +7,7 @@ RSpec.describe 'Customer', type: :request do
       @customer_1 = create(:customer, id: 1)
       @subscription_1 = create(:subscription, id: 6, customer_id: 1, status: "Active")
       @subscription_2 = create(:subscription, id: 19, customer_id: 1, status: "Cancelled")
+      @subscription_3 = create(:subscription, id: 413, customer_id: 1, status: "Pending")
       get '/api/v1/customers/1'
     end
 

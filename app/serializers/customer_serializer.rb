@@ -1,6 +1,7 @@
 class CustomerSerializer
 
   def self.customer_with_subscriptions(customer)
+
     {
       "data": {
         "id": customer.id,
@@ -10,7 +11,7 @@ class CustomerSerializer
           "last_name": customer.last_name,
           "email": customer.email,
           "address": customer.address,
-          "subscriptions": Subscription.where(customer_id: customer.id).all
+          "subscriptions": SubscriptionSerializer.active_and_cancelled(customer.id)
         }
       }
     }
